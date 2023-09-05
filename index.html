@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+<div class="container" id="body">
+  <div class="search">
+  <form class="row g-3" id="search-form">
+  <div class="col-auto">
+    <input type="text" class="form-control" placeholder="Enter a city" id="search-text-input">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Search</button>
+  </div>
+  </form>
+  <button type="button" class="btn btn-success" id="btn-success">Current</button>
+</div> 
+  <div class="current">
+  <h1> <span class="change">Johannesburg </span>
+  </br>
+<span id="condition"><small>clear sky</small> </span>
+  </h1>
+   </div>
+  <h2>
+    <div class="h2">Currently <span id="celcius">21</span> <span class="degrees-1"> °C <!--</span>|<span class="degrees-2">°F</span> 🌥️ -->
+  <!--<span class="current-emoji">🌥️</span>--></div>
+<!--<div class="small">partly cloudy</div> -->
+  </h2>
+  <h3></h3>
+  <p id="temperature-details">
+          <div class="row">
+            <div class="col" id="temperature">
+                  <span id="main-temp"></span> 
+              </div>
+              <div class="col" id="more-details-temp">
+                  <li id="humidity"> 
+                      Humidity: 5%
+                  </li>
+                  <li id="wind">
+                      Wind: 4km/h
+                  </li>
+              </div>
+          </div>
+      </p>
+<!--<div class="h2">currently 21
+  <div class="degrees">°C</div>
+  <div class="ferenheit">°F</div>
+  <span class="current-emoji">🌥️</span></div>
+<div class="small">partly cloudy</div> -->
+  
+  <!--<div class="row">
+  <div class="col-2">
+      <span class="days">Sun</span>
+      <br />
+      <div class="emoji">☀️</div>
+      <span class="temperature">26°c</span>
+    </div>
+    <div class="col-2">
+      <span class="days">Mon</span>
+      <br />
+      <div class="emoji">🌤️</div>
+      <span class="temperature">23°c</span>
+    </div>
+    <div class="col-2">
+      <span class="days">Tue</span>
+      <br />
+      <div class="emoji">🌦️</div>
+      <span class="temperature">19°c</span>
+    </div>
+    <div class="col-2">
+      <span class="days">Wed</span>
+      <br />
+      <div class="emoji">🌥️</div>
+     <span class="temperature">20°c</span>
+    </div>
+    <div class="col-3">
+      <span class="days">Thur</span>
+      <br />
+      <div class="emoji">☀️</div>
+     <span class="temperature">25°c</span>
+    </div>
+  </div> -->
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
